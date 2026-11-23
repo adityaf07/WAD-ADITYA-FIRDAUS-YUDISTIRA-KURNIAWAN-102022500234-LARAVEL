@@ -11,7 +11,7 @@
 <div class="container">
     <h1>Data Pelanggan</h1>
     <div class="card-custom">
-        <a href="{{ route('pelanggaan.create') }}" class="btn btn-primary mb-4">+ Tambah Data</a>
+        <a href="{{ route('pelanggan.create') }}" class="btn btn-primary mb-4">+ Tambah Data</a>
 
         <div class="table-responsive">
             <table class="table">
@@ -26,7 +26,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                @foreach ($pelanggann as $p)
+                @foreach ($pelanggan as $p)
                     <tr>
                         <th scope="row">{{ $loop->iteration }}</th>
                         <td>{{ $p->nama }}</td>
